@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Petrograd</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+    <body>
+
+  <header id="header">
+
+      <nav>
+          <a href="#">Petrograd</a>
+      </nav>
+        </header>
+
+        <details>
+    <summary>Filters</summary>
+    <button id="veggiefilter">Veggie dishes</button>
+    <button id="alcoholfilter">Non-alcoholic dishes</button>
+  </details>
+
+  <main class="productlist">
+      <template id="productTemplate">
+        <article class="product">
+          <img class="product_image" src="https://kea-alt-del.dk/t5/site/imgs/small/rodbede-cabanossi-sm.jpg" alt="courses images" />
+          <section class="productbody">
+            <h3 class="data_name">Dish name</h3>
+              <h3 class="data_description"> Short Description </h3>
+
+
+              <div class="vegetarian hidden">
+              <img src="img/vegetarian.png" width="40" height="80">
+              </div>
+
+              <div class="alcoholic">
+              <img src="img/alcohol.png" width="40" height="80">
+              </div>
+
+
+              <h4 class="data_price"> <span></span>,- </h4>
+            <h4 class="data_discount">Now only <span class="span1"></span>,- </h4>
+
+
+            <button>Read more</button>
+          </section>
+        </article>
+      </template>
+
+  </main>
+
+  <div class="modal-background hide">
+    <div class="modal-content">
+      <h3 class="modal-name">NAME</h3>
+      <img src="https://kea-alt-del.dk/t5/site/imgs/small/rodbede-cabanossi-sm.jpg" alt="IMAGE" class="modal-image" />
+      <p class="modal-description">LONG DESCRIPTION</p>
+      <h4 class="modal-price">PRICE</h4>
+      <h4 class="modal-discount">DISC</h4>
+
+    </div>
+  </div>
+
+
+    <script src="js/script.js"> </script>
+
+</body>
+</html>
